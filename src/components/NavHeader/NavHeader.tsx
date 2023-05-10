@@ -56,7 +56,7 @@ const NavHeader = () => {
 							<div className="flex flex-col gap-2 items-start">
 								<Link
 									className="hover:text-cyan-400 p-2 text-sm hover:bg-gray-200 w-full"
-									to="/profile"
+									to="/user/profile"
 								>
 									Tài khoản của tôi
 								</Link>
