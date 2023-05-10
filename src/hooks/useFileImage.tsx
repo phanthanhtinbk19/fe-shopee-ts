@@ -1,4 +1,4 @@
-import {useEffect, useRef, useState} from "react";
+import {SetStateAction, useEffect, useRef, useState} from "react";
 import {toast} from "react-toastify";
 import {getBase64} from "../utils/utils";
 
@@ -28,7 +28,7 @@ const useFileImage = () => {
 	useEffect(() => {
 		if (file) {
 			getBase64(file).then((data) => {
-				return setFileDataURL(data);
+				return setFileDataURL(data as SetStateAction<null>);
 			});
 		}
 	}, [file]);
